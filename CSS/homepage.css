@@ -1,0 +1,83 @@
+body{
+    background-color: powderblue;
+    background-position: center;
+    font-family: sans-serif;
+}
+.logo{
+    width: 40px;
+    height: 40px;
+    float: left;
+}
+img{
+    width: 140px;
+    height: 70px;
+    border-radius:10px 0px 0px 10px;
+}
+.menu{
+    background-color: lightslategray;
+    opacity: 1;
+    text-align: center;
+    border-radius: 10px;
+    float: left;
+    width:98.5%;
+    position: fixed;
+    z-index: 80;
+    margin-bottom: 100px;
+}
+.menu ul{
+    display: inline-flex;
+    list-style: none;
+    color: cornsilk;
+    
+}
+.menu ul li{
+    width:150px;
+    margin: 5px 5px;
+    padding: 5px;
+    width:130px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+}
+.active, .menu ul li:hover{
+    background-color: lightgray;
+    border-radius: 5px;
+    color: black;
+}
+.menu .fa{
+    margin-right: 5px;
+}
+.submenu{
+    display: none;
+    margin-top: 5px;
+    border-radius: 10px;
+    margin-left: -5px;
+}
+.menu ul li:hover .submenu{
+    display: block;
+    position: absolute;
+    background-color: gray;
+    visibility: visible;
+    z-index: 80;
+}
+.menu ul li:hover .submenu ul{
+    display: block;
+}
+.menu ul li:hover .submenu ul li{
+    width:210px;
+    padding: 5px;
+    border-bottom: 1px dotted white;
+    background-color: transparent;
+    text-align: left;
+    margin-top: 2px;
+}
+.menu ul li:hover .submenu ul li:first-child{
+    margin-top:25px;
+}
+.menu ul li:hover .submenu ul li:last-child{
+    border-bottom: 0px;
+}
+.menu ul li:hover .submenu ul li:hover{
+    background-color: lightgray;
+}
